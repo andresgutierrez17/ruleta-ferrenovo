@@ -79,6 +79,65 @@
 .space20{
   margin-top: 20px;
 }
+
+table.inventario {
+  border: 1px solid #39B54A;
+  background-color: transparent;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.inventario td, table.inventario th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.inventario tbody td {
+  font-size: 13px;
+}
+table.inventario tr:nth-child(even) {
+  background: #60a769;
+}
+table.inventario thead {
+  background: #39B54A;
+  background: -moz-linear-gradient(top, #39B54A 0%, #60a769 66%, #60a769 100%);
+  background: -webkit-linear-gradient(top, #39B54A 0%, #60a769 66%, #60a769 100%);
+  background: linear-gradient(to bottom, #39B54A 0%, #60a769 66%, #60a769 100%);
+  border-bottom: 2px solid #444444;
+}
+table.inventario thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+table.inventario thead th:first-child {
+  border-left: none;
+}
+
+table.inventario tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #D0E4F5;
+  background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top: 2px solid #444444;
+}
+table.inventario tfoot td {
+  font-size: 14px;
+}
+table.inventario tfoot .links {
+  text-align: right;
+}
+table.inventario tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

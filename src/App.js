@@ -7,19 +7,19 @@ import riveIcons from './1714-4322-rives-animated-emojis.riv';
 import Rive from '@rive-app/react-canvas';
 
 const premios = [
-  {index: 0, name : "Kit taladro de impacto 13MM 550Watts + Pulidora 115MM 550 Watts", name_short:"Kit taladro + Pulidora", cant: 12},
+  {index: 0, name : "Kit taladro de impacto 13MM 550Watts + Pulidora 115MM 550 Watts", name_short:"Kit taladro + Pulidora", cant: 10},
   {index: 1, name : "Kit de electricista 9pcs", name_short:"Kit de electricista", cant: 12},
   {index: 2, name : "Juego de copas ratchet 40 piezas acabado en cromo y en estuche plástico", name_short:"Juego de copas", cant: 12},
   {index: 3, name : "Juego surtido de herramientas manuales 5 piezas en estuche", name_short:"Juego de herramientas", cant: 12},
   {index: 4, name : "Gancho reutilizable Ferrenovo x 3und", name_short:"Gancho reutilizable", cant: 12},
   {index: 5, name : "Kit de reparación motocicleta, contiene 8 pcs", name_short:"Kit de motocicleta", cant: 12},
   {index: 6, name : "Juego de 6 pcs destornilladores de precisión", name_short:"Juego de destornilladores", cant: 12},
-  {index: 7, name : "Juego de llaves hexagonales", name_short:"Juegos De Llaves", cant: 12},
-  {index: 8, name : "Hombre Solo", name_short:"Hombre Solo", cant: 12},
-  {index: 9, name : "Pinza Punta Larga", name_short:"Pinza Punta Larga", cant: 12},
-  {index: 10, name : "Ganchos Fijos Decorativos", name_short:"Ganchos Fijos Decorativos", cant: 12},
-  {index: 11, name : "Ganchos Fijos", name_short:"Ganchos Fijos", cant: 12},
-  {index: 12, name : "Fieltro protector Uso Liviano", name_short:"Fieltro Protector", cant: 12}
+  {index: 7, name : "Juego de llaves hexagonales", name_short:"Juegos De Llaves", cant: 15},
+  {index: 8, name : "Hombre Solo", name_short:"Hombre Solo", cant: 15},
+  {index: 9, name : "Pinza Punta Larga", name_short:"Pinza Punta Larga", cant: 15},
+  {index: 10, name : "Ganchos Fijos Decorativos", name_short:"Ganchos Fijos Decorativos", cant: 15},
+  {index: 11, name : "Ganchos Fijos", name_short:"Ganchos Fijos", cant: 15},
+  {index: 12, name : "Fieltro protector Uso Liviano", name_short:"Fieltro Protector", cant: 15}
 ]
 const data = []
 premios.forEach(premio => {
@@ -104,21 +104,27 @@ function App() {
           showConfig ? 
           <>
           <form action="post">
-            <table>
-              <tr>
-                <th>Producto</th>
-                <th>Cantidad</th>
-              </tr>
-              {inventary.map((product, productIndex) =>
-                {
-                  return (
-                    <tr key={"product-"+productIndex}>
-                      <td>{product.name}</td>
-                      <td><input type="number" name={"product-"+productIndex} id={"product-"+productIndex} data-id={productIndex} value={product.cant} onChange={handleChangeInvetary}/></td>
-                    </tr>
-                  )
-                }
-              )}
+            <table className='inventario'>
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Cantidad</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                {inventary.map((product, productIndex) =>
+                  {
+                    return (
+                      <tr key={"product-"+productIndex}>
+                        <td>{product.name}</td>
+                        <td><input type="number" name={"product-"+productIndex} id={"product-"+productIndex} data-id={productIndex} value={product.cant} onChange={handleChangeInvetary}/></td>
+                      </tr>
+                    )
+                  }
+                )}
+              </tbody>
+              
             </table>
           </form>
           <button onClick={handleConfigClick} className="boton-ferrenovo space20">Cerrar</button>
