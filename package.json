@@ -2,7 +2,7 @@
   "name": "roulette-react-ferrenovo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andresgutierrez17.github.io/ruleta-ferrenovo",
+  "homepage": "http://andresgutierrez17.github.io/ruleta-ferrenovo/",
   "dependencies": {
     "@rive-app/react-canvas": "^3.0.15",
     "@testing-library/jest-dom": "^5.16.4",
