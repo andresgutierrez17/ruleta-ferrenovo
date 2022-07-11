@@ -76,7 +76,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} alt=""/>
-        Ruleta de premios
+        ¡Participa en la Ruleta Ganadora!
       </header>
       <div className='App-content'>
         {!showresult && !showConfig ? 

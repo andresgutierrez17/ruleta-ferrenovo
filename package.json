@@ -2,6 +2,7 @@
   "name": "roulette-react-ferrenovo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://andresgutierrez17.github.io/ruleta-ferrenovo",
   "dependencies": {
     "@rive-app/react-canvas": "^3.0.15",
     "@testing-library/jest-dom": "^5.16.4",
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "concurrently": "^7.2.2",
     "electron": "^19.0.8",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-custom-roulette": "^1.2.0",
     "react-dom": "^18.2.0",

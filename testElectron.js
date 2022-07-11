@@ -14,7 +14,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   // 'public' is the path where webpack bundles my app
-  mainWindow.loadURL(`file://${__dirname}/public/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/build/index.html`);
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools()
