@@ -2,13 +2,15 @@
   "name": "roulette-react-ferrenovo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://andresgutierrez17.github.io/ruleta-ferrenovo/",
+  "homepage": "./",
   "dependencies": {
+    "@electron/remote": "^2.0.8",
     "@rive-app/react-canvas": "^3.0.15",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "concurrently": "^7.2.2",
+    "cross-env": "^7.0.3",
     "electron": "^19.0.8",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
@@ -26,8 +28,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron-react": "concurrently \"set BROWSER=none && npm start\" \"wait-on http://localhost:3000 && electron .\"",
-    "testElectron": "electron testElectron.js"
+    "testElectron": "electron testElectron.js",
+    "electron:serve": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm electron:start\"",
+    "electron:build": "",
+    "electron:start": "wait-on tcp:3000  && electron ." 
   },
   "eslintConfig": {
     "extends": [

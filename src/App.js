@@ -19,7 +19,8 @@ const premios = [
   {index: 9, name : "Pinza Punta Larga", name_short:"Pinza Punta Larga", cant: 15},
   {index: 10, name : "Ganchos Fijos Decorativos", name_short:"Ganchos Fijos Decorativos", cant: 15},
   {index: 11, name : "Ganchos Fijos", name_short:"Ganchos Fijos", cant: 15},
-  {index: 12, name : "Fieltro protector Uso Liviano", name_short:"Fieltro Protector", cant: 15}
+  {index: 12, name : "Fieltro protector Uso Liviano", name_short:"Fieltro Protector", cant: 15},
+  {index: 13, name : "Lapiceros", name_short:"Fieltro Protector", cant: 200}
 ]
 const data = []
 premios.forEach(premio => {

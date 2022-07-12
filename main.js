@@ -1,5 +1,6 @@
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require('electron')
+require('@electron/remote/main').initialize();
 const path = require('path')
 
 function createWindow() {
@@ -12,8 +13,9 @@ function createWindow() {
         fullscreenable: true,
         frame: true,
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js'),
-            nodeIntegration: true
+            //preload: path.join(__dirname, 'preload.js'),
+            //nodeIntegration: true,
+            enableRemoteModule: true
         }
     })
 
