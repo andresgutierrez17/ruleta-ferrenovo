@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "./static/css/main.6ec6f10d.css",
-    "main.js": "./static/js/main.0c8e1c3c.js",
+    "main.js": "./static/js/main.0f84599c.js",
     "static/js/787.4c468cce.chunk.js": "./static/js/787.4c468cce.chunk.js",
     "static/media/BREAKERSW00-REGULAR.TTF": "./static/media/BREAKERSW00-REGULAR.9e2597a6d58ec16405fa.TTF",
     "static/media/1714-4322-rives-animated-emojis.riv": "./static/media/1714-4322-rives-animated-emojis.2e42fa10e61cb1dc7977.riv",
+    "static/media/1302-2493-animated-emoji-pack.riv": "./static/media/1302-2493-animated-emoji-pack.c16fb2b07bef73ef0737.riv",
     "static/media/logo.svg": "./static/media/logo.6974e5aabd0c3fc421dcfd9477714e5c.svg",
     "index.html": "./index.html",
     "main.6ec6f10d.css.map": "./static/css/main.6ec6f10d.css.map",
-    "main.0c8e1c3c.js.map": "./static/js/main.0c8e1c3c.js.map",
+    "main.0f84599c.js.map": "./static/js/main.0f84599c.js.map",
     "787.4c468cce.chunk.js.map": "./static/js/787.4c468cce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ec6f10d.css",
-    "static/js/main.0c8e1c3c.js"
+    "static/js/main.0f84599c.js"
   ]
 }
