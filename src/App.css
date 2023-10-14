@@ -12,7 +12,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .App-header {
-  background-color: #000;
+  background-color: #214B9B;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,8 +34,12 @@
   width: 400px;
   padding: 10px 40px;
 }
+.App-header img{
+  max-width: 80%;
+  height: auto;
+}
 .App-content {
-  background-color: #282c34;
+  background-color: #ffffff;
   color: #fff;
   min-height: 100vh;
   width: calc(100vw - 400px);
@@ -53,21 +57,21 @@
   max-height: 600px !important;
 }
 .productName{
-  color: #39B54A;
+  color: #214B9B;
   font-size: 42px;
 }
 .ganasteText{
-  color: #fff;
+  color: #214B9B;
   font-size: 36px;
   margin: 0px;
 }
 .App-link {
-  color: #61dafb;
+  color: #214B9B;
 }
 
 .boton-ferrenovo{
-  border: 4px solid #39B54A;
-  color: #fff;
+  border: 4px solid #214B9B;
+  color: #214B9B;
   font-size: 28px;
   background-color: transparent;
   padding: 10px 20px;
@@ -81,8 +85,8 @@
 }
 
 table.inventario {
-  border: 1px solid #39B54A;
-  background-color: transparent;
+  border: 1px solid #214B9B;
+  background-color: #07368d;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
@@ -92,20 +96,20 @@ table.inventario td, table.inventario th {
   padding: 3px 2px;
 }
 table.inventario tbody td {
-  font-size: 13px;
+  font-size: 26px;
 }
 table.inventario tr:nth-child(even) {
-  background: #60a769;
+  background: #214B9B;
 }
 table.inventario thead {
-  background: #39B54A;
-  background: -moz-linear-gradient(top, #39B54A 0%, #60a769 66%, #60a769 100%);
-  background: -webkit-linear-gradient(top, #39B54A 0%, #60a769 66%, #60a769 100%);
-  background: linear-gradient(to bottom, #39B54A 0%, #60a769 66%, #60a769 100%);
+  background: #214B9B;
+  background: -moz-linear-gradient(top, #214B9B 0%, #214B9B 66%, #214B9B 100%);
+  background: -webkit-linear-gradient(top, #214B9B 0%, #214B9B 66%, #214B9B 100%);
+  background: linear-gradient(to bottom, #214B9B 0%, #214B9B 66%, #214B9B 100%);
   border-bottom: 2px solid #444444;
 }
 table.inventario thead th {
-  font-size: 15px;
+  font-size: 32px;
   font-weight: bold;
   color: #FFFFFF;
   border-left: 2px solid #D0E4F5;
@@ -113,7 +117,9 @@ table.inventario thead th {
 table.inventario thead th:first-child {
   border-left: none;
 }
-
+table.inventario input{
+  font-size: 26px;
+}
 table.inventario tfoot {
   font-size: 14px;
   font-weight: bold;
@@ -132,7 +138,7 @@ table.inventario tfoot .links {
 }
 table.inventario tfoot .links a{
   display: inline-block;
-  background: #1C6EA4;
+  background: #214B9B;
   color: #FFFFFF;
   padding: 2px 8px;
   border-radius: 5px;
@@ -144,5 +150,24 @@ table.inventario tfoot .links a{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width:720px) {
+  .App{
+    flex-direction: column;
+  }
+  .App-header {
+    min-height: 300px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: calc(30px + 1vmin);
+  }
+  .App-content{
+    width: 100%;
+    min-height: 400px;
+    padding: 30px 30px 0;
+    box-sizing: border-box;
   }
 }

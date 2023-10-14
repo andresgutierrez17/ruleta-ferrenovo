@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './lgoo cafam.png';
 import './fonts/BREAKERSW00-REGULAR.TTF';
 import './App.css';
 import { Wheel } from 'react-custom-roulette';
@@ -9,21 +9,13 @@ import Rive from '@rive-app/react-canvas';
 
 const premios = [
   {index: 0, name : "Vuelve a intentarlo", name_short:"Vuelve a intentarlo", cant: -1},
-  {index: 1, name : "Kit taladro de impacto 13MM 550Watts + Pulidora 115MM 550 Watts", name_short:"Kit taladro + Pulidora", cant: 10},
-  {index: 2, name : "Kit de electricista 9pcs", name_short:"Kit de electricista", cant: 12},
-  {index: 3, name : "Juego de copas ratchet 40 piezas acabado en cromo y en estuche plástico", name_short:"Juego de copas", cant: 12},
-  {index: 4, name : "Juego surtido de herramientas manuales 5 piezas en estuche", name_short:"Juego de herramientas", cant: 12},
-  {index: 5, name : "Gancho reutilizable Ferrenovo x 3und", name_short:"Gancho reutilizable", cant: 12},
-  {index: 6, name : "Kit de reparación motocicleta, contiene 8 pcs", name_short:"Kit de motocicleta", cant: 12},
-  {index: 7, name : "Juego de 6 pcs destornilladores de precisión", name_short:"Juego de destornilladores", cant: 12},
-  {index: 8, name : "Vuelve a intentarlo", name_short:"Vuelve a intentarlo", cant: -1},
-  {index: 9, name : "Juego de llaves hexagonales", name_short:"Juegos De Llaves", cant: 15},
-  {index: 10, name : "Hombre Solo", name_short:"Hombre Solo", cant: 15},
-  {index: 11, name : "Pinza Punta Larga", name_short:"Pinza Punta Larga", cant: 15},
-  {index: 12, name : "Ganchos Fijos Decorativos", name_short:"Ganchos Fijos Decorativos", cant: 15},
-  {index: 13, name : "Ganchos Fijos", name_short:"Ganchos Fijos", cant: 15},
-  {index: 14, name : "Fieltro protector Uso Liviano", name_short:"Fieltro Protector", cant: 15},
-  {index: 15, name : "Lapiceros", name_short:"Fieltro Protector", cant: 200}
+  {index: 1, name : "Esfero", name_short:"Esfero", cant: 10},
+  {index: 2, name : "Gorra", name_short:"Gorra", cant: 12},
+  {index: 3, name : "Agenda", name_short:"Agenda", cant: 12},
+  {index: 4, name : "Botilito", name_short:"Botilito", cant: 12},
+  {index: 5, name : "Tula", name_short:"Tula", cant: 12},
+  {index: 6, name : "Entrada a teatro Cafam", name_short:"Entrada Teatro Cafam", cant: 12},
+  {index: 7, name : "Pasadia Centro Vacacional Cafam Melgar", name_short:"Pasadia Cafam Melgar", cant: 0},
 ]
 const data = []
 premios.forEach(premio => {
@@ -89,12 +81,12 @@ function App() {
               mustStartSpinning={mustSpin}
               prizeNumber={prizeNumber}
               data={data}
-              backgroundColors={['#0AA245', '#000000']}
+              backgroundColors={['#214B9B', '#bc5804', '#b10807', '#09979a', '#bacf02', '#4d0089', '#890088', '#28ac05']}
               textColors={['#ffffff']}
-              outerBorderColor={["#f2f2f2"]}
+              outerBorderColor={["#ccc"]}
               outerBorderWidth={[10]}
-              innerBorderColor={["#f2f2f2"]}
-              radiusLineColor={["#dedede"]}
+              innerBorderColor={["#ccc"]}
+              radiusLineColor={["#ccc"]}
               radiusLineWidth={[5]}
               fontSize={[10]}
               onStopSpinning={() => {
