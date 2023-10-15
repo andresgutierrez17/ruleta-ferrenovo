@@ -6,7 +6,10 @@ import React, {useState} from "react"
 import riveIcons from './1714-4322-rives-animated-emojis.riv';
 import riveEmojis from './1302-2493-animated-emoji-pack.riv';
 import Rive from '@rive-app/react-canvas';
-
+import useSound from 'use-sound'
+import spinSound from './sounds/spin.wav'
+import loseSound from './sounds/lose.wav'
+import winSound from './sounds/win.mp3'
 const premios = [
   {index: 0, name : "Vuelve a intentarlo", name_short:"Vuelve a intentarlo", cant: -1},
   {index: 1, name : "Esfero", name_short:"Esfero", cant: 10},
@@ -30,11 +33,14 @@ function App() {
   const [showresult, setShowResult] = useState(false);
   const [showConfig, setShowConfig] = useState(false);
   const [inventary, setInventary] = useState(premios);
-
+  const [playSpin] = useSound(spinSound, { volume: 0.4 })
+  const [playWin] = useSound(winSound);
+  const [playLose] = useSound(loseSound);
   const handleConfigClick = () =>{
     setShowConfig(!showConfig);
   } 
   const handleSpinClick = () => {
+    playSpin();
     var productosDisponibles = inventary.filter((item) => {
       if(item.cant > 0 || item.cant === -1) return item;
     });
@@ -92,6 +98,7 @@ function App() {
               onStopSpinning={() => {
                 setMustSpin(false);
                 setShowResult(true);
+                premios[prizeNumber].cant === -1 ? playLose() : playWin();
               }}
             />
             {!mustSpin ? <div className='buttonsRuleta'><button onClick={handleSpinClick} className="boton-ferrenovo space20"  disabled={inventary.filter((item) => item.cant > 0).length <= 0}>GIRAR LA RULETA</button> <button onClick={handleConfigClick} className="boton-ferrenovo space20">Inventario</button></div>  : <></>}

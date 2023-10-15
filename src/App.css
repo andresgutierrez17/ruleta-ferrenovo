@@ -153,12 +153,12 @@ table.inventario tfoot .links a{
   }
 }
 
-@media (max-width:720px) {
+@media (max-width:1080px) {
   .App{
     flex-direction: column;
   }
   .App-header {
-    min-height: 300px;
+    min-height: 400px;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -169,5 +169,23 @@ table.inventario tfoot .links a{
     min-height: 400px;
     padding: 30px 30px 0;
     box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 60px;
+  }
+  .bhdLno{
+    max-width: 900px !important;
+    max-height: 900px !important;
+  }
+  .productName{
+    font-size: 2.8em;
+  }
+  .ganasteText{
+    font-size: 3em;
+  }
+  .boton-ferrenovo{
+    font-size: 2.5em;
+  }
+  .iconoAnimado{
+    height: 500px;
   }
 }

@@ -10,15 +10,14 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 720, height: 1280})
-
+  mainWindow = new BrowserWindow({width: 720, height: 1280, fullscreen: true})
+  mainWindow.setMenuBarVisibility(false)
   // and load the index.html of the app.
   // 'public' is the path where webpack bundles my app
   mainWindow.loadFile(`build/index.html`);
 
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
-
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
     // Dereference the window object, usually you would store windows
